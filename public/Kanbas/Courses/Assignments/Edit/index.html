@@ -1,0 +1,139 @@
+<html>
+  <body>
+    <select id="select-assignment-edit">
+      <option value="SPEEDGRADER">SpeedGrader</option>
+    </select>
+    <hr />
+    <h2>Assignment Name</h2>
+    <form id="assignment-edit-form">
+      <input
+        type="text"
+        value="A1 - ENV + HTML"
+        id="text-fields-name"
+      /><br /><br />
+      <textarea cols="23" rows="2">
+This is the assignment description.</textarea
+      >
+      <br /><br />
+      <label for="text-fields-username">Points</label> <br />
+      <input type="number" id="text-fields-username" value="100" /> <br /><br />
+
+      <label for="select-many-groups">Assignment Group</label> <br />
+      <select id="select-many-groups">
+        <option selected value="ASSIGNMENTS">ASSIGNMENTS</option>
+        <option value="QUIZZES">QUIZZES</option>
+        <option value="EXAMS">EXAMS</option>
+        <option value="PROJECTS">PROJECTS</option>
+      </select>
+      <br /><br />
+
+      <label for="select-many-display-grades">Display Grade as</label> <br />
+      <select id="select-many-display-grades">
+        <option selected value="PERCENTAGE">Percentage</option>
+        <option value="FRACTION">Fraction</option>
+        <option value="DECIMAL">Decimal</option>
+      </select>
+      <br /><br />
+
+      <label for="select-many-submit-types">Submission Type</label> <br />
+      <select id="select-many-submit-types" style="width: 5.5%">
+        <option selected value="ONLINE">Online</option>
+        <option value="INPERSON">In-person</option>
+      </select>
+      <br /><br />
+
+      <label>Online Entry Options</label>
+      <br />
+      <input
+        type="checkbox"
+        value="TEXTENTRY"
+        name="check-text-entry"
+        id="chkbox-text-entry"
+      />
+      <label for="chkbox-text-entry">Text Entry</label> <br />
+
+      <input type="checkbox" value="URL" name="check-url" id="chkbox-url" />
+      <label for="chkbox-url">Website URL</label> <br />
+
+      <input
+        type="checkbox"
+        value="RECORDINGS"
+        name="check-media-recordings"
+        id="chkbox-media-recordings"
+      />
+      <label for="chkbox-media-recordings">Media Recordings</label> <br />
+
+      <input
+        type="checkbox"
+        value="ANNOTATION"
+        name="check-student-annotation"
+        id="chkbox-student-annotation"
+      />
+      <label for="chkbox-student-annotation">Student Annotation</label> <br />
+
+      <input
+        type="checkbox"
+        value="UPLOAD"
+        name="check-file-uploads"
+        id="chkbox-file-uploads"
+      />
+      <label for="chkbox-file-uploads">File Uploads</label>
+
+      <br /><br />
+
+      Assign
+      <br />
+      <label for="text-fields-assign-to">Assign to</label> <br />
+      <input
+        type="text"
+        value="Everyone"
+        id="text-fields-assign-to"
+        style="width: 10%"
+      />
+      <br /><br />
+
+      <label for="text-fields-due-date">Due</label><br />
+      <input type="date" id="text-fields-due-date" value="2021-01-01" /><br />
+      <br />
+      <label for="text-fields-from-date">Available From</label><br />
+      <input type="date" id="text-fields-from-date" value="2021-01-01" /><br />
+      <br />
+      <label for="text-fields-until-date">Until</label><br />
+      <input type="date" id="text-fields-until-date" value="2021-01-01" /><br />
+      <br />
+
+      <div style="display: flex; gap: 5px">
+        <a href="/Kanbas/Courses/Assignments/screen.html">
+          <button
+            type="button"
+            style="
+              background-color: #f0f0f0;
+              padding: 10px 20px;
+              border: 1px solid #ccc;
+              border-radius: 0px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              cursor: pointer;
+            "
+          >
+            Cancel
+          </button>
+        </a>
+        <a href="/Kanbas/Courses/Assignments/screen.html">
+          <button
+            type="button"
+            style="
+              background-color: #f0f0f0;
+              padding: 10px 20px;
+              border: 1px solid #ccc;
+              border-radius: 0px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              cursor: pointer;
+            "
+          >
+            Save
+          </button>
+        </a>
+      </div>
+    </form>
+  </body>
+</html>
