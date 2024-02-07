@@ -1,0 +1,236 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <div class="d-flex">
+      <div class="col-12 wd-bg-color-green d-block d-sm-none">
+        <h4>Navbar</h4>
+      </div>
+
+      <div class="col-sm-2 col-lg-1 d-none d-sm-block wd-bg-color-yellow">
+        <ul class="wd-kanbas-navigation">
+          <li>
+            <a href="http://northeastern.edu"
+              ><img
+                class="neu-logo"
+                src="/images/logo1.png"
+                alt="Northeastern Logo"
+            /></a>
+          </li>
+          <li>
+            <a href="/Kanbas/Account/Profile/screen.html"
+              ><i class="fa fa-user" style="color: white"></i
+              ><span>Account</span></a
+            >
+          </li>
+          <li>
+            <a href="/Kanbas/Dashboard/screen.html"
+              ><i class="fa fa-tachometer"></i><span>Dashboard</span></a
+            >
+          </li>
+          <li class="wd-active">
+            <a href="/Kanbas/Courses/Home/screen.html"
+              ><i class="fa fa-book"></i><span>Courses</span></a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-calendar"></i><span>Calendar</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-inbox"></i><span>Inbox</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-history"></i><span>History</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-sitemap"></i><span>Studio</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-comments"></i><span>Commons</span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-question-circle"></i><span>Help</span></a
+            >
+          </li>
+          <li></li>
+          <!-- Additional empty list item -->
+          <li></li>
+          <!-- Additional empty list item -->
+          <li></li>
+          <!-- Additional empty list item -->
+          <li></li>
+          <!-- Additional empty list item -->
+          <li></li>
+          <!-- Additional empty list item -->
+          <li></li>
+          <!-- Additional empty list item -->
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-lg-3 d-none d-sm-block wd-bg-color-red">
+          <!-- Content to be positioned above wd-navigation -->
+          <div class="top-bar-container">
+            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+              <ol
+                class="breadcrumb d-flex align-items-center justify-content-between"
+              >
+                <div class="d-flex align-items-center">
+                  <i
+                    class="fa fa-bars top-icon"
+                    style="color: red; margin-right: 10px"
+                  ></i>
+                  <li class="breadcrumb-item">
+                    <a href="#" style="color: red"> CS4550.12631.202410</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Modules
+                  </li>
+                </div>
+                <button
+                  class="btn btn-secondary btn-light d-none d-lg-inline-block float-end custom-btn"
+                >
+                  Student View
+                </button>
+              </ol>
+            </nav>
+            <hr />
+          </div>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-sm-3 col-lg-2 d-none d-sm-block wd-bg-color-red">
+          <ul class="wd-navigation">
+            <li>
+              <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
+            </li>
+            <li class="wd-active">
+              <a href="/Kanbas/Courses/Modules/screen.html"> Modules</a>
+            </li>
+            <li><a href="#"> Piazza</a></li>
+            <li>
+              <a href="#"> Zoom Meetings</a>
+            </li>
+            <li>
+              <a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a>
+            </li>
+            <li>
+              <a href="#"> Quizzes</a>
+            </li>
+            <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+            <li><a href="#"> People</a></li>
+            <li>
+              <a href="#"> Panopto Video</a>
+            </li>
+            <li>
+              <a href="#"> Discussions</a>
+            </li>
+            <li>
+              <a href="#"> Announcements</a>
+            </li>
+            <li><a href="#"> Pages</a></li>
+            <li><a href="#"> Files</a></li>
+            <li>
+              <a href="#"> Rubrics</a>
+            </li>
+            <li>
+              <a href="#"> Outcomes</a>
+            </li>
+            <li>
+              <a href="#"> Collaborations</a>
+            </li>
+            <li>
+              <a href="#"> Syllabus</a>
+            </li>
+            <li>
+              <a href="#"> Settings</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col wd-bg-color-blue">
+          <button>Collapse All</button>
+          <button>View Progress</button>
+          <select>
+            <option>Publish All</option>
+            <option>Publish All Modules and Items</option>
+            <option>Publish Modules Only</option>
+            <option>Unpublish All</option>
+          </select>
+          <button>+ Module</button>
+          <ul class="list-group wd-modules">
+            <li class="list-group-item">
+              <div>Week 0 - INTO</div>
+              <ul class="list-group">
+                <li class="list-group-item">LEARNING OBJECTIVES</li>
+                <ul class="list-group-item-item">
+                  <li>Introduction to the course</li>
+                  <li>Learn what is Web Development</li>
+                  <li>Creating a development environment</li>
+                  <li>Creating a Web Application</li>
+                  <li>Getting started with the 1st assignment</li>
+                </ul>
+                <li class="list-group-item">READING</li>
+                <ul>
+                  <li>Full Stack Developer - Chapter 1 - Introduction</li>
+                  <li>
+                    Full Stack Developer - Chapter 2 - Creating User Interfaces
+                    With HTML
+                  </li>
+                </ul>
+                <li class="list-group-item">SLIDES</li>
+                <ul>
+                  <li>
+                    <a href="#"
+                      >Introduction to Web Development Links to an external
+                      site.</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Creating an HTTP server with Node.js Links to an external
+                      site.</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Creating a React Application Links to an external
+                      site.</a
+                    >
+                  </li>
+                </ul>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <div>Week 2</div>
+              <ul class="list-group">
+                <li class="list-group-item">Learning Objectives</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-xl-2 d-none d-lg-block wd-bg-color-green">
+          <h4>Course Status</h4>
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <button>Unpublish</button>
+                  <button>Publish</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button>Import Existing Content</button><br />
+          <button>Import From Commons</button><br />
+          <button>Choose Home Page</button><br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
