@@ -1,0 +1,5 @@
+.custom-btn {
+    border-radius: 5px; /* Adjust the border-radius value for more or less squareness */
+    border-color: lightgrey; /* Set the border color to dark grey */
+    height: 40px;
+  }

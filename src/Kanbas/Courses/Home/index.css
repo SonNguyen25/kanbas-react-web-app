@@ -1,0 +1,47 @@
+.content-container {
+    display: flex;
+    justify-content: space-between; /* Adjusts space between the child elements */
+    align-items: start; /* Aligns items to the top */
+  }
+  
+  .left-content {
+    /* If you want to limit the width of ViewComponent and ModuleList */
+    flex-grow: 1;
+    margin-right: 20px;
+    width: 100%; /* Adjust as needed */
+  }
+  
+  .status {
+    /* Styling for the status heading */
+    width: 20%; /* Adjust as needed */
+    text-align: right; /* Aligns the text to the right */
+  }
+  .right-grey-buttons {
+    border-radius: 5px; /* Adjust the border-radius value for more or less squareness */
+    border-color: lightgrey; /* Set the border color to dark grey */
+    width: 200px; /* Set a fixed width for the buttons */
+    height: 40px;
+    display: inline;
+    align-items: start;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .course-status-td {
+    width: 200px;
+    display: flex;
+  }
+  
+  .blurry-button {
+    background-color: rgb(66, 144, 66);
+    border-radius: 5px; /* Adjust the border-radius value for more or less squareness */
+    border-color: lightgrey; /* Set the border color to dark grey */
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+    color: white;
+    padding: 5px 8.5px;
+    font-size: 14px;
+  }
+
+  

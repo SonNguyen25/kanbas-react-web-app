@@ -1,0 +1,89 @@
+.no-decoration {
+    text-decoration: none;
+  }
+  
+  .no-decoration:hover {
+    text-decoration: underline;
+  }
+.float-end.flex-center {
+    display: flex;
+    align-items: center; /* This will align the flex items vertically */
+    justify-content: center; /* This will align the flex items horizontally */
+  }
+  
+  .list-group-item {
+    overflow: hidden; /* This ensures that the floated elements are contained within the li */
+  }
+.percentage-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 14px;
+  }
+
+.assignments-btn {
+    margin-left: 10px;
+    background-color: lightgray;
+    color: black;
+    justify-content: end;
+    width: 150px;
+}
+
+.assignments-custom-btn {
+    width: 1%;
+    align-items: center;
+    border: black;
+    justify-content: center;
+}
+
+.assignments-red-btn {
+    color: white;
+    background-color: rgb(192, 36, 36);
+    width: 250px;
+}
+.assignments-red-btn:hover {
+    color: white;
+    background-color: darkred;
+}
+
+@media screen and (max-width: 1200px) {
+    .assignments-btn {
+        font-size: 7px;
+        height: 30px;
+        width: 100px;
+    }
+    .assignments-red-btn {
+        font-size: 7;
+        width: 150px;
+    }
+    .assignments-text-field-container {
+        width:100%;
+    }
+    .assignments-custom-btn {
+        width: 1%;
+        justify-content: center;
+        border: black;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .assignments-red-btn {
+      font-size: 5px; /* Smaller font size for smaller screens */
+      width: 115px;
+    }
+    .assignments-form-control {
+        width:100%;
+      }
+}
+
+@media screen and (max-width: 700px) {
+  
+  .percentage-circle {
+    display: none;
+  }
+}
