@@ -9,7 +9,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import { HiMiniBars3 } from "react-icons/hi2";
-import { FaEye } from "react-icons/fa";
+import { FaEye, FaChevronDown, FaBars } from "react-icons/fa";
 import "./index.css";
 import CourseNavigation from "./Navigation";
 import Modules from "./Modules";
@@ -39,14 +39,14 @@ function Courses() {
 
             <p style={{ color: "white" }}>{decodeURIComponent(location.pathname).split("/").pop()}</p>
             <a href="/Kanbas/Courses/Home/screen-kanbas.html" className="kanbas-nav-link">
-              <i className="fa fa-bars" style={{ color: "white" }}></i>
+              <FaBars style={{ color: "white" }}/>
             </a>
             <a
               href="/Kanbas/Courses/Navigation/index.html"
               className="course-nav-link"
             >
-              <i className="fa fa-eye" style={{ color: "white" }}></i>
-              <i className="fa fa-chevron-down" style={{ color: "white" }}></i>
+              <FaEye style={{ color: "white" }}/>
+              <FaChevronDown style={{ color: "white" }}/>
             </a>
           </h4>
         </div>
