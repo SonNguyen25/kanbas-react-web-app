@@ -6,7 +6,7 @@ function ViewComponent() {
     <div>
       <div className="buttons-module">
         <button className="module-btn" data-expand="false">Collapse All</button>
-        <button className="module-btn">View Progress</button>
+        <button className="module-btn ">View Progress</button>
         <div className="dropdown">
           <button
             className="module-btn dropdown-toggle"

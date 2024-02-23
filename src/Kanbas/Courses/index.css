@@ -129,6 +129,7 @@
   align-items: center;
   display: flex;
   padding-left: 10px;
+  
 }
 
 @media screen and (max-width: 1200px) {
@@ -175,6 +176,7 @@
 .buttons-module {
   display: flex;
   align-items: center; /* Align items vertically */
+  max-width: 100%;
 }
 .buttons-module button,
 .buttons-module select {
