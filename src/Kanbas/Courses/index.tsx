@@ -32,16 +32,16 @@ function Courses() {
     const assignmentIndex = pathSegments.findIndex(segment => segment.toLowerCase() === "assignments");
     if (assignmentIndex >= 0) {
       // Add 'Assignments' to the breadcrumb
-      breadcrumbItems.push({ label: 'Assignments', path: `/Courses/${courseId}/Assignments` });
+      breadcrumbItems.push({ label: 'Assignments', path: `/Kanbas/Courses/${courseId}/Assignments` });
   
       // If there's an Assignment ID, add it as well
       if (pathSegments.length > assignmentIndex + 1) {
         const assignmentId = pathSegments[assignmentIndex + 1];
-        breadcrumbItems.push({ label: assignmentId, path: `/Courses/${courseId}/Assignments/${assignmentId}` });
+        breadcrumbItems.push({ label: assignmentId, path: `/Kanbas/Courses/${courseId}/Assignments/${assignmentId}` });
       }
     } else if (pathSegments.length > 1) {
       const lastSegment = pathSegments[pathSegments.length - 1];
-      breadcrumbItems.push({ label: decodeURIComponent(lastSegment), path: window.location.hash });
+      breadcrumbItems.push({ label: decodeURIComponent(lastSegment), path: location });
     }
   
     return breadcrumbItems;
