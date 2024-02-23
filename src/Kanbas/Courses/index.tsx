@@ -15,6 +15,8 @@ import CourseNavigation from "./Navigation";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
+import KanbasNavBarDropdown from "./KanbasNavBarDropdown";
+import CourseNavBarDropdown from "./CourseNavBarDropdown";
 
 function Courses() {
   const location = useLocation();
@@ -33,21 +35,13 @@ function Courses() {
   return (
     <div>
       
-      <div className="col-12 wd-bg-color-green d-block d-sm-none">
+      <div className="col-12 wd-bg-color-green d-block d-sm-none top-nav-bar">
           <h4 className="nav-bar-mini">
-            <p style={{ color: "white" }}>{course?.name}</p>
+            <Link className="course-name-link" style={{ color: "white" }} to={`Modules`}>{course?.name}</Link>
 
-            <p style={{ color: "white" }}>{decodeURIComponent(location.pathname).split("/").pop()}</p>
-            <a href="/Kanbas/Courses/Home/screen-kanbas.html" className="kanbas-nav-link">
-              <FaBars style={{ color: "white" }}/>
-            </a>
-            <a
-              href="/Kanbas/Courses/Navigation/index.html"
-              className="course-nav-link"
-            >
-              <FaEye style={{ color: "white" }}/>
-              <FaChevronDown style={{ color: "white" }}/>
-            </a>
+            <Link className="course-name-link2" style={{ color: "white" }} to={location.pathname}>{decodeURIComponent(location.pathname).split("/").pop()}</Link>
+            <KanbasNavBarDropdown/>
+            <CourseNavBarDropdown/>
           </h4>
         </div>
       <div className="d-none d-sm-block">
@@ -84,7 +78,7 @@ function Courses() {
         
         <div
           className={"scroll-content overflow-y-scroll bottom-0 end-0" + (isLargeScreen ? " position-fixed" : " position-static")}
-          style={{ left: "320px", top: "50px"}}
+          style={{ left: "320px", top: "90px"}}
         >
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />

@@ -8,7 +8,7 @@
   align-items: center;
   padding-bottom: 5px;
 }
-.course-name-link {
+.course-name-link, .course-name-link2 {
   color: red;
   text-decoration: none;
   font-size: 20px;
@@ -18,9 +18,9 @@
   padding-bottom: 2px;
   white-space: nowrap;
 }
-.course-name-link:hover  {
-    text-decoration: underline;
-  }
+.course-name-link:hover, .course-name-link2:hover {
+  text-decoration: underline;
+}
 
 .course-name-small {
   font-size: 10px;
@@ -42,22 +42,22 @@
   margin-right: 10px; /* Adjust as needed */
 }
 .page-title {
-    width: 100%;
-    display: flex;
-    height: 100%;
-    margin-top: 16px;
-    font-size: 20px;
-  }
-  .page-title:hover a {
-    text-decoration: underline;
-  }
-  
-  .page-title a {
-    color: black;
-    text-decoration: none; /* Removes underline */
-  }
+  width: 100%;
+  display: flex;
+  height: 100%;
+  margin-top: 16px;
+  font-size: 20px;
+}
+.page-title:hover a {
+  text-decoration: underline;
+}
+
+.page-title a {
+  color: black;
+  text-decoration: none; /* Removes underline */
+}
 .seperator {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .course-nav {
@@ -66,7 +66,7 @@
 }
 
 .icon {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 .wd-modules,
 .wd-modules * {
@@ -132,23 +132,19 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .module-btn {
-        font-size: 12px;
-        height: 40px;
-        width: 115px;
-    }
+  .module-btn {
+    font-size: 12px;
+    height: 40px;
+    width: 115px;
   }
+}
 
 @media screen and (max-width: 600px) {
-    .module-btn {
-      font-size: 12px; /* Smaller font size for smaller screens */
-      width: 115px;
-    }
+  .module-btn {
+    font-size: 12px; /* Smaller font size for smaller screens */
+    width: 115px;
   }
-  
-  
-
-
+}
 
 .course-title {
   width: 100%;
@@ -163,8 +159,6 @@
   height: 100%;
   width: 50%;
 }
-
-
 
 /* .course-status {
   
@@ -204,7 +198,6 @@
   border: none; /* Remove borders */
   font-size: 9.5px;
 }
-
 
 .dropdown-menu {
   display: none;
@@ -269,9 +262,10 @@
   flex-direction: column; /* Stack items vertically */
 }
 
+
 .course-nav-link {
   display: inline-block;
-  background-color: black;
+  background-color: transparent;
   border: none;
   top: 0;
   right: 0;
@@ -301,10 +295,72 @@
 }
 
 @media (max-width: 768px) {
-    .scroll-content.position-fixed {
-      position: static; /* or 'relative' depending on your layout */
-      left: auto; /* Adjust height as necessary */
-      overflow-y: visible; /* Adjust scrolling as necessary */
-      /* Other adjustments for smaller screens */
-    }
+  .scroll-content.position-fixed {
+    position: static;
+    left: auto; /* Adjust height as necessary */
+    overflow-y: visible;
+    /* Other adjustments for smaller screens */
   }
+}
+
+.dropdown-menu-kanbas-navbar {
+  position: fixed; /* Fixed position */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: white; /* Background color */
+  z-index: 1000; /* Make sure it's above other content */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  padding-top: 10px; /* Adjust as needed */
+  overflow-y: auto;
+}
+
+.dropdown-item-kanbas-navbar {
+  padding: 12px 16px;
+  width: 100%;
+  text-decoration: none;
+  display: block;
+  color: red;
+}
+
+.dropdown-item-kanbas-navbar:hover {
+  background-color: #f1f1f1;
+}
+
+
+.menu-dropdown-courses-navbar {
+    position: fixed;
+    top: 60px; /* Adjust this variable to match the height of your top bar */
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    background-color: white;
+    z-index: 1000; 
+    overflow-y: auto; 
+    position: fixed; 
+    height: 100%; 
+}
+
+
+.menu-items-courses-navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 30%;
+  color: red;
+  text-decoration: none;
+}
+
+.menu-items-courses-navbar:hover {
+    text-decoration: underline;
+  }
+  
