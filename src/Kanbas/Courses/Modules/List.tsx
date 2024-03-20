@@ -75,7 +75,7 @@ function ModuleList() {
             <div>
               <span>
                 <FaEllipsisV className="me-2" />
-                {selectedModule._id === mod._id ? (
+                {selectedModule?._id === mod._id ? (
                   <FaCaretDown className="me-2" />
                 ) : (
                   <FaCaretRight className="me-2" />
@@ -111,7 +111,7 @@ function ModuleList() {
                 <FaEllipsisV className="ms-2" />
               </span>
             </div>
-            {selectedModule._id === mod._id && (
+            {selectedModule?._id === mod._id && (
               <ul className="list-group">
                 {mod.lessons?.map(
                   (
