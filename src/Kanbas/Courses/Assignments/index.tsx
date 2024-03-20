@@ -50,8 +50,8 @@ function Assignments() {
         <ul className="list-group wd-modules">
           <li className="list-group-item">
             <div>
-            
-              <FaEllipsisV className="me-2" /> <FaCaretDown className="me-2" /> ASSIGNMENTS
+              <span>
+              <FaEllipsisV className="me-2" /> <FaCaretDown className="me-2" /> ASSIGNMENTS </span>
               <span className="float-end">
               <span className="percentage-circle me-2">40% of Total</span>
                 <FaCheckCircle className="text-success" />
