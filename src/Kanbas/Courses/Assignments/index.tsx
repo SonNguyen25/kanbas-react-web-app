@@ -2,14 +2,14 @@ import React from "react";
 import { FaCheckCircle, FaEllipsisV, FaPlusCircle, FaCaretDown, } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, useParams } from "react-router-dom";
-import { assignments } from "../../Database";
+import db from "../../Database";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenToSquare } from '@fortawesome/free-solid-svg-icons'
 import "./index.css";
 
 function Assignments() {
   const { courseId } = useParams();
-  const assignmentList = assignments.filter(
+  const assignmentList = db.assignments.filter(
     (assignment) => assignment.course.includes(courseId ?? "")
   );
   return (

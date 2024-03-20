@@ -3,3 +3,32 @@
     border-color: lightgrey; /* Set the border color to dark grey */
     height: 40px;
   }
+
+  .modules-edit {
+    margin-bottom: 20px;
+  }
+
+  .edit-btn-1 {
+    border-radius: 10px; 
+    border-width: 5px;/* Adjust the border-radius value for more or less squareness */
+    border-color: grey;
+    font-size: 13px;
+    height: 40px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .edit-btn-2 {
+    border-radius: 10px; /* Adjust the border-radius value for more or less squareness */
+    border-color: darkgreen;
+    background-color: green;
+    color: white;
+    font-size: 13px;
+    height: 40px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }

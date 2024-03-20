@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import "./index.css";
 import {
   FaRegUserCircle,
@@ -12,8 +13,16 @@ import {
   FaQuestionCircle,
 } from "react-icons/fa";
 
-function KanbasNavigation() {
+function KanbasNavigation({ coursesHeight }: { coursesHeight: number }) {
   const isAccountActive = useLocation().pathname.includes("Account");
+  const [placeholderCount, setPlaceholderCount] = useState(0);
+  useEffect(() => {
+
+    const placeholdersToAdd = Math.floor(coursesHeight * 3 + 4);
+
+    setPlaceholderCount(Math.max(placeholdersToAdd, 0));
+  }, [coursesHeight]); // Recalculate when coursesHeight change
+
   const links = [
     {
       label: "Account",
@@ -50,22 +59,18 @@ function KanbasNavigation() {
           key={index}
           className={pathname.includes(link.label) ? "wd-active" : ""}
         >
-          <Link to={`/Kanbas/${link.label}`}>
-            {" "}
-            {link.icon} {link.label}{" "}
+          <Link
+            style={{ whiteSpace: "nowrap"}}
+            to={`/Kanbas/${link.label}`}
+          >
+            <div>{link.icon}</div> {/* Icon on its own line */}
+            <div>{link.label}</div> {/* Label on its own line */}
           </Link>
         </li>
       ))}
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      {Array.from({ length: placeholderCount }, (_, index) => (
+        <li></li>
+      ))}
     </ul>
   );
 }

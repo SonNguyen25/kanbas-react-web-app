@@ -1,4 +1,4 @@
-import { courses } from "../../Kanbas/Database";
+import db from "../../Kanbas/Database";
 import { useState, useEffect } from "react";
 import {
   Navigate,
@@ -18,7 +18,7 @@ import Assignments from "./Assignments";
 import KanbasNavBarDropdown from "./KanbasNavBarDropdown";
 import CourseNavBarDropdown from "./CourseNavBarDropdown";
 
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
   const location = useLocation();
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId);

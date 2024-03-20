@@ -11,11 +11,11 @@ import {
     FaBell,
     FaCalendar,
 } from "react-icons/fa";
-import { todo } from '../../../Database';
+import db from '../../../Database';
 
 function Status() {
 
-  const comingUpItems = [...todo];
+  const comingUpItems = [...db.todo];
   const buttons = [
     { icon: <FaDownload />, text: "Import Existing Content" },
     { icon: <FaComments />, text: "Import From Commons" },
@@ -61,7 +61,7 @@ function Status() {
       </h4>
       <hr />
       <ul>
-        {todo.map((item) => (
+        {db.todo.map((item) => (
           <li key={item.id}>
             <Link to={'#'} style={{ color: 'red' }}>
               {item.action} {item.date} at {item.time}
